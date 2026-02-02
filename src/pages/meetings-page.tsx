@@ -25,16 +25,6 @@ export default function MeetingsPage() {
   // Upcoming meetings (Heartland Farms stays upcoming + add attached meetings)
   const upcomingMeetings: Meeting[] = [
     {
-      id: 101,
-      title: "Industry Event with Heartland Farms",
-      date: "3rd December 2025",
-      time: "6:00pm",
-      location: "Morgridge Hall 2516",
-      description:
-        "Join us for a conversation with Heartland Farms as they discuss their computer-vision potato sorter project, machine learning algorithms, SQL database design, and real-world supply & manufacturing applications.",
-      // no image (optional)
-    },
-    {
       id: 102,
       title: "Kickoff",
       date: "28th January 2026",
@@ -47,10 +37,20 @@ export default function MeetingsPage() {
         "Spring ’25 kickoff meeting: launch MadData, share a roadmap of upcoming meetings, introduce the board, and kick things off with food, music, and icebreakers.",
     },
     {
+      id: 122,
+      title: "MadData Info Session",
+      date: "4th February 2026",
+      time: "6pm - 7pm",
+      location: "Morgridge Hall 2516",
+      imageBg: "bg-white",
+      description:
+      "We’ll go over what’s new this year, explain the general track versus the Qualcomm track, and share tips and tricks for getting the most out of your hackathon experience.",
+    },
+    {
       id: 103,
       title: "PwC",
       date: "11th February 2026",
-      time: "",
+      time: "6pm - 7pm",
       location: "Morgridge Hall 2516",
       image: IMAGES.pwc,
       imageFit: "contain",
@@ -62,7 +62,7 @@ export default function MeetingsPage() {
       id: 104,
       title: "MadData Team Building",
       date: "18th February 2026",
-      time: "",
+      time: "6pm - 7pm",
       location: "Morgridge Hall 2516",
       description:
         "MadData logistics + mixer. Come meet teammates if you don’t have a group yet, and we’ll review winning submissions with tips and hints.",
