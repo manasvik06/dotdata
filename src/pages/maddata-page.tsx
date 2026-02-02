@@ -24,8 +24,7 @@ export default function MadDataPage() {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             MadData is dotData's annual data science hackathon. This competition happens in February, is open to all
             students at UW-Madison, and is free to enter. MadData is a great way for students to find innovative
-            solutions for modern problems using data. It is a great way to gain real-world experience working with data
-            science tools.
+            solutions for modern problems using data and gain real-world experience with data science tools.
           </p>
         </header>
 
@@ -40,20 +39,37 @@ export default function MadDataPage() {
                 muted
                 loop
                 playsInline
-                controls={false}
               />
             </div>
 
             <div className="mt-6 text-center">
-              <p className="text-2xl md:text-3xl font-semibold text-gray-900">Applications open soon.</p>
+              <p className="text-2xl md:text-3xl font-semibold text-gray-900">
+                Applications are now open.
+              </p>
               <p className="mt-2 text-gray-600">
-                Stay tuned on our socials for the application link and track announcements.
+                Apply to participate in MadData’26 — no prior experience required.
+              </p>
+
+              <div className="mt-5 flex justify-center">
+                <a
+                  href="https://forms.gle/GiAfyfRLfnqZ3vDw7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="gap-2">
+                    Apply now <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </a>
+              </div>
+
+              <p className="mt-3 text-sm text-gray-500">
+                If the button doesn’t work, visit: https://forms.gle/GiAfyfRLfnqZ3vDw7
               </p>
             </div>
           </div>
         </section>
 
-        {/* Projects/Datasets Section */}
+        {/* Winners Section */}
         <section>
           <h2 className="text-3xl font-bold mb-8 text-center">2025 MadData Winners</h2>
 
@@ -69,8 +85,8 @@ export default function MadDataPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Computer Vision AI to help homeowners scan, value, and protect their belongings from forest fire
-                  losses—making the insurance claims process faster and less stressful.
+                  Computer vision AI to help homeowners scan, value, and protect belongings from forest fire losses,
+                  making the insurance claims process faster and less stressful.
                 </p>
               </CardContent>
               <CardFooter>
@@ -96,7 +112,7 @@ export default function MadDataPage() {
                 <CardDescription />
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">Boost Your Thought Journey</p>
+                <p className="text-gray-600">Boost your thought journey.</p>
               </CardContent>
               <CardFooter>
                 <a
@@ -117,14 +133,13 @@ export default function MadDataPage() {
                 <div className="bg-green-100 p-3 rounded-full w-fit mb-4">
                   <FileSpreadsheet className="h-6 w-6 text-green-600" />
                 </div>
-                <CardTitle>Ai-Interviewer</CardTitle>
+                <CardTitle>AI-Interviewer</CardTitle>
                 <CardDescription />
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Our project was inspired by the challenges and stress people face during job interviews. We
-                  recognized the need for a tool that could help candidates practice and improve their interview skills
-                  in a low-pressure environment.
+                  A low-pressure interview practice tool designed to help candidates improve confidence and performance
+                  through realistic AI-driven mock interviews.
                 </p>
               </CardContent>
               <CardFooter>
