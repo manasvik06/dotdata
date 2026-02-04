@@ -9,7 +9,7 @@ export default function SponsorsPage() {
       name: "Epic Systems",
       level: "",
       description: "",
-      logoUrl: "public/epiclogo.png",
+      logoUrl: "/epiclogo.png",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ export default function SponsorsPage() {
       level: "",
       description:
         "",
-      logoUrl: "public/grafanalogo.png",
+      logoUrl: "/grafanalogo.png",
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ export default function SponsorsPage() {
       level: "",
       description:
         "",
-      logoUrl: "public/uwmadliblogo.jpg",
+      logoUrl: "/uwmadliblogo.jpg",
     },
     {
       id: 5,
@@ -41,7 +41,7 @@ export default function SponsorsPage() {
       level: "",
       description:
         "",
-      logoUrl: "public/cdislogo.png",
+      logoUrl: "/cdislogo.png",
     },
   ]
 
