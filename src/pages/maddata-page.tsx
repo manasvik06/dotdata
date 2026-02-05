@@ -49,7 +49,7 @@ export default function MadDataPage() {
 
         {/* Video + Applications Banner */}
         <section className="mb-16">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <div className="rounded-2xl overflow-hidden shadow-lg border bg-black">
               <video
                 className="w-full h-auto"
@@ -92,7 +92,7 @@ export default function MadDataPage() {
         </section>
 
         {/* Schedule Section */}
-        <section className="mb-16 max-w-6xl mx-auto">
+        <section className="mb-16 max-w-4xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               Event Schedule
@@ -175,7 +175,7 @@ export default function MadDataPage() {
         </section>
 
         {/* Winners Section */}
-        <section className="max-w-6xl mx-auto">
+        <section className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">MadData '25 Winners</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
