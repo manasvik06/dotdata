@@ -13,6 +13,10 @@ export default function MadDataPage() {
    */
   const promoVideoSrc = "/MadData'26.MP4"
 
+    const qualcommLogoSrc = "/qualcomm.png"
+
+    const qualcommLaptopSpecPdf = "/Qualcomm_Laptop_Specs.pdf"
+
   const scheduleDay1 = [
     { time: "9:00 AM", title: "Check-in Begins", location: "Sterling 1310", icon: <MapPin className="h-5 w-5" /> },
     { time: "10:00 AM", title: "Check-in Closes & Opening Ceremony Begins", location: "Sterling 1310", icon: <Presentation className="h-5 w-5" /> },
@@ -90,6 +94,104 @@ export default function MadDataPage() {
             </div>
           </div>
         </section>
+
+
+                {/* Qualcomm Track Section */}
+                <section className="mb-16">
+          <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden border">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              {/* Left side: Title + Logo */}
+              <div className="p-10 bg-gradient-to-br from-purple-600 to-blue-600 text-white flex flex-col justify-center">
+                <p className="text-sm uppercase tracking-wider opacity-90 mb-3">
+                  New Track
+                </p>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Qualcomm Track
+                </h2>
+                <p className="text-white/90 text-base md:text-lg max-w-md">
+                  Build with on-device AI and run models locally during the hackathon.
+                </p>
+
+                <div className="mt-10 flex justify-start">
+  <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8">
+    <img
+      src={qualcommLogoSrc}
+      alt="Qualcomm logo"
+      className="h-20 md:h-28 w-auto object-contain"
+    />
+  </div>
+</div>
+
+              </div>
+
+              {/* Right side: Details */}
+              <div className="p-10">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+                  New This Year: Qualcomm Track
+                </h3>
+
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-2 w-2 rounded-full bg-purple-600 flex-shrink-0" />
+                    <span>
+                      MadData is introducing a new Qualcomm Track for the first time in five years, designed for teams
+                      interested in building with on-device AI
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-2 w-2 rounded-full bg-purple-600 flex-shrink-0" />
+                    <span>
+                      This is an optional, application-based track where selected teams will work with Qualcomm-powered
+                      laptops and build and run models locally without relying on the cloud
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-2 w-2 rounded-full bg-purple-600 flex-shrink-0" />
+                    <span>
+                      Teams will have the opportunity to interact with and learn directly from Qualcomm engineers
+                      throughout the hackathon
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-2 w-2 rounded-full bg-purple-600 flex-shrink-0" />
+                    <span>
+                      Teams must consist of exactly three members and spots in this track are limited
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-2 w-2 rounded-full bg-purple-600 flex-shrink-0" />
+                    <span>
+                      Prizes for this track include laptops
+                    </span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-2 w-2 rounded-full bg-purple-600 flex-shrink-0" />
+                    <span>
+                      Applying is optional, and teams not selected will still compete in the general MadData track
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Center link to laptop spec PDF */}
+            <div className="border-t bg-gray-50 p-6 text-center">
+              <a
+                href={qualcommLaptopSpecPdf}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" className="gap-2">
+                  View Qualcomm Laptop Specs (PDF) <ArrowRight className="h-4 w-4" />
+                </Button>
+              </a>
+              <p className="mt-3 text-sm text-gray-500">
+                If the button doesn't work, open: {qualcommLaptopSpecPdf}
+              </p>
+            </div>
+          </div>
+        </section>
+
 
         {/* Schedule Section */}
         <section className="mb-16 max-w-4xl mx-auto">
