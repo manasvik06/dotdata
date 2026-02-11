@@ -25,28 +25,6 @@ export default function MeetingsPage() {
   // Upcoming meetings (Heartland Farms stays upcoming + add attached meetings)
   const upcomingMeetings: Meeting[] = [
     {
-      id: 102,
-      title: "Kickoff",
-      date: "28th January 2026",
-      time: "",
-      location: "Morgridge Hall 2516",
-      image: IMAGES.kickoff,
-      imageFit: "contain", // logos look nicer as contain
-      imageBg: "bg-white",
-      description:
-        "Spring ’25 kickoff meeting: launch MadData, share a roadmap of upcoming meetings, introduce the board, and kick things off with food, music, and icebreakers.",
-    },
-    {
-      id: 122,
-      title: "MadData Info Session",
-      date: "4th February 2026",
-      time: "6pm - 7pm",
-      location: "Morgridge Hall 2516",
-      imageBg: "bg-white",
-      description:
-      "We’ll go over what’s new this year, explain the general track versus the Qualcomm track, and share tips and tricks for getting the most out of your hackathon experience.",
-    },
-    {
       id: 103,
       title: "PwC",
       date: "11th February 2026",
