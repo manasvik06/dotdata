@@ -18,7 +18,7 @@ export default function MadDataPage() {
     const qualcommLaptopSpecPdf = "/Qualcomm_Laptop_Specs.pdf"
 
   const scheduleDay1 = [
-    { time: "9:00 AM", title: "Check-in Begins", location: "Sterling 1310", icon: <MapPin className="h-5 w-5" /> },
+    { time: "8:30 AM", title: "Check-in Begins", location: "Sterling 1310", icon: <MapPin className="h-5 w-5" /> },
     { time: "10:00 AM", title: "Check-in Closes & Opening Ceremony Begins", location: "Sterling 1310", icon: <Presentation className="h-5 w-5" /> },
     { time: "10:00 AM - 11:00 AM", title: "Opening Ceremony, Sponsor Presentations, Rules", location: "", icon: <Award className="h-5 w-5" /> },
     { time: "11:00 AM", title: "Move to Morgridge - Hacking Starts!", location: "Morgridge Basement", icon: <BarChart3 className="h-5 w-5" /> },
