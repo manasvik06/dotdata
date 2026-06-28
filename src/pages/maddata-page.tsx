@@ -1,109 +1,108 @@
 import React from "react"
-import { ArrowRight, BarChart3, Database, FileSpreadsheet, Calendar, Clock, MapPin, Utensils, Presentation, Award } from "lucide-react"
+import { ArrowRight, BarChart3, Database, FileSpreadsheet, Users, Trophy, Zap } from "lucide-react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
 export default function MadDataPage() {
-  /**
-   * Put your video file here:
-   * public/MadData'26.mp4
-   *
-   * Then this path will work:
-   * "/MadData'26.mp4"
-   */
   const promoVideoSrc = "/MadData'26.MP4"
-
-    const qualcommLogoSrc = "/qualcomm.png"
-
-    const qualcommLaptopSpecPdf = "/Qualcomm_Laptop_Specs.pdf"
-
-  const scheduleDay1 = [
-    { time: "8:30 AM", title: "Check-in Begins", location: "Sterling 1310", icon: <MapPin className="h-5 w-5" /> },
-    { time: "10:00 AM", title: "Check-in Closes & Opening Ceremony Begins", location: "Sterling 1310", icon: <Presentation className="h-5 w-5" /> },
-    { time: "10:00 AM - 11:00 AM", title: "Opening Ceremony, Sponsor Presentations, Rules", location: "", icon: <Award className="h-5 w-5" /> },
-    { time: "11:00 AM", title: "Move to Morgridge - Hacking Starts!", location: "Morgridge Basement", icon: <BarChart3 className="h-5 w-5" /> },
-    { time: "11:30 AM - 12:30 PM", title: "AmFam Presentation", location: "", icon: <Presentation className="h-5 w-5" /> },
-    { time: "1:00 PM", title: "Lunch", location: "", icon: <Utensils className="h-5 w-5" /> },
-    { time: "1:30 PM - 2:30 PM", title: "Qualcomm Workshop", location: "", icon: <Presentation className="h-5 w-5" /> },
-    { time: "3:00 PM - 5:00 PM", title: "Booths (AmFam, Qualcomm, Data Science Institute)", location: "", icon: <MapPin className="h-5 w-5" /> },
-    { time: "5:00 PM", title: "Dinner", location: "", icon: <Utensils className="h-5 w-5" /> },
-  ]
-
-  const scheduleDay2 = [
-    { time: "9:00 AM", title: "Breakfast", location: "", icon: <Utensils className="h-5 w-5" /> },
-    { time: "11:00 AM", title: "Hacking Ends / Submissions Due", location: "", icon: <Clock className="h-5 w-5" /> },
-    { time: "11:30 AM", title: "Presentations and Judging", location: "", icon: <Presentation className="h-5 w-5" /> },
-    { time: "2:30 PM", title: "Closing Ceremony", location: "", icon: <Award className="h-5 w-5" /> },
-  ]
+  const qualcommLogoSrc = "/qualcomm.png"
+  const qualcommLaptopSpecPdf = "/Qualcomm_Laptop_Specs.pdf"
 
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-16">
-        {/* Header Section */}
+        {/* Header */}
         <header className="mb-12 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
-            MadData
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+            MadData'26
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            MadData is dotData's annual data science hackathon. This competition happens in February, is open to all
-            students at UW-Madison, and is free to enter. MadData is a great way for students to find innovative
-            solutions for modern problems using data and gain real-world experience with data science tools.
+          <p className="text-xl text-gray-500 max-w-2xl mx-auto">
+            dotData's annual data science hackathon — open to all UW-Madison students, free to enter.
           </p>
         </header>
 
-        {/* Video + Applications Banner */}
+        {/* Success Banner */}
         <section className="mb-16">
-          <div className="max-w-4xl mx-auto">
-            <div className="rounded-2xl overflow-hidden shadow-lg border bg-black">
-              <video
-                className="w-full h-auto"
-                src={promoVideoSrc}
-                autoPlay
-                muted
-                loop
-                playsInline
-              />
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-purple-600 to-blue-600 rounded-2xl p-10 md:p-14 text-white text-center shadow-xl">
+            <p className="text-sm uppercase tracking-widest opacity-75 mb-3">February 2026</p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">It was a huge success.</h2>
+            <p className="text-white/75 text-lg mb-10 max-w-xl mx-auto">
+              Thank you to every hacker, mentor, sponsor, and organizer who made the weekend unforgettable.
+            </p>
+
+            <div className="grid grid-cols-3 gap-6 mb-10">
+              <div>
+                <div className="flex justify-center mb-2">
+                  <Users className="h-6 w-6 opacity-70" />
+                </div>
+                <p className="text-4xl md:text-5xl font-bold">300+</p>
+                <p className="text-white/65 mt-1 text-sm">Participants</p>
+              </div>
+              <div>
+                <div className="flex justify-center mb-2">
+                  <Trophy className="h-6 w-6 opacity-70" />
+                </div>
+                <p className="text-4xl md:text-5xl font-bold">70+</p>
+                <p className="text-white/65 mt-1 text-sm">Projects Submitted</p>
+              </div>
+              <div>
+                <div className="flex justify-center mb-2">
+                  <Zap className="h-6 w-6 opacity-70" />
+                </div>
+                <p className="text-4xl md:text-5xl font-bold">24</p>
+                <p className="text-white/65 mt-1 text-sm">Hours of Hacking</p>
+              </div>
             </div>
 
-            <div className="mt-8 bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="bg-gradient-to-r from-purple-600 to-blue-600 p-6 text-center">
-                <p className="text-2xl md:text-3xl font-bold text-white">
-                  Applications are now open!
-                </p>
-              </div>
-              
-              <div className="p-8 text-center">
-                <p className="text-lg text-gray-600 mb-6">
-                  Apply to participate in MadData'26 — no prior experience required.
-                </p>
-
-                <a
-                  href="https://forms.gle/GiAfyfRLfnqZ3vDw7"
-                  target="_blank"
-                  rel="noopener noreferrer"
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://maddata26-28800.devpost.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button size="lg" variant="secondary" className="gap-2 w-full sm:w-auto">
+                  View Projects on Devpost <ArrowRight className="h-4 w-4" />
+                </Button>
+              </a>
+              <a
+                href="https://drive.google.com/drive/folders/1z0t-FzDlVl_eJTJH1RLk4pS9x5hS9Iss"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="gap-2 border-white text-white bg-transparent hover:bg-white/10 hover:text-white w-full sm:w-auto"
                 >
-                  <Button size="lg" className="gap-2 text-lg px-8 py-6">
-                    Apply now <ArrowRight className="h-5 w-5" />
-                  </Button>
-                </a>
-
-                <p className="mt-6 text-sm text-gray-500">
-                  If the button doesn't work, visit: https://forms.gle/GiAfyfRLfnqZ3vDw7
-                </p>
-              </div>
+                  See the Photos <ArrowRight className="h-4 w-4" />
+                </Button>
+              </a>
             </div>
           </div>
         </section>
 
+        {/* Video */}
+        <section className="mb-16">
+          <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg border bg-black">
+            <video
+              className="w-full h-auto"
+              src={promoVideoSrc}
+              autoPlay
+              muted
+              loop
+              playsInline
+            />
+          </div>
+        </section>
 
-                {/* Qualcomm Track Section */}
-                <section className="mb-16">
+        {/* Qualcomm Track / Sponsors Section */}
+        <section className="mb-16">
           <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden border">
             <div className="grid grid-cols-1 md:grid-cols-2">
               {/* Left side: Title + Logo */}
               <div className="p-10 bg-gradient-to-br from-purple-600 to-blue-600 text-white flex flex-col justify-center">
                 <p className="text-sm uppercase tracking-wider opacity-90 mb-3">
-                  New Track
+                  Sponsor Track
                 </p>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">
                   Qualcomm Track
@@ -113,68 +112,60 @@ export default function MadDataPage() {
                 </p>
 
                 <div className="mt-10 flex justify-start">
-  <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8">
-    <img
-      src={qualcommLogoSrc}
-      alt="Qualcomm logo"
-      className="h-20 md:h-28 w-auto object-contain"
-    />
-  </div>
-</div>
-
+                  <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8">
+                    <img
+                      src={qualcommLogoSrc}
+                      alt="Qualcomm logo"
+                      className="h-20 md:h-28 w-auto object-contain"
+                    />
+                  </div>
+                </div>
               </div>
 
               {/* Right side: Details */}
               <div className="p-10">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
-                  New This Year: Qualcomm Track
+                  Qualcomm Track
                 </h3>
 
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex gap-3">
                     <span className="mt-2 h-2 w-2 rounded-full bg-purple-600 flex-shrink-0" />
                     <span>
-                      MadData is introducing a new Qualcomm Track for the first time in five years, designed for teams
+                      MadData introduced a new Qualcomm Track, designed for teams
                       interested in building with on-device AI
                     </span>
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-2 h-2 w-2 rounded-full bg-purple-600 flex-shrink-0" />
                     <span>
-                      This is an optional, application-based track where selected teams will work with Qualcomm-powered
-                      laptops and build and run models locally without relying on the cloud
+                      Selected teams worked with Qualcomm-powered laptops, building and running
+                      models locally without relying on the cloud
                     </span>
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-2 h-2 w-2 rounded-full bg-purple-600 flex-shrink-0" />
                     <span>
-                      Teams will have the opportunity to interact with and learn directly from Qualcomm engineers
+                      Teams had the opportunity to interact with and learn directly from Qualcomm engineers
                       throughout the hackathon
                     </span>
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-2 h-2 w-2 rounded-full bg-purple-600 flex-shrink-0" />
                     <span>
-                      Teams must consist of exactly three members and spots in this track are limited
+                      Teams consisted of exactly three members — spots in this track were limited
                     </span>
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-2 h-2 w-2 rounded-full bg-purple-600 flex-shrink-0" />
                     <span>
-                      Prizes for this track include laptops
-                    </span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="mt-2 h-2 w-2 rounded-full bg-purple-600 flex-shrink-0" />
-                    <span>
-                      Applying is optional, and teams not selected will still compete in the general MadData track
+                      Prizes for this track included laptops
                     </span>
                   </li>
                 </ul>
               </div>
             </div>
 
-            {/* Center link to laptop spec PDF */}
             <div className="border-t bg-gray-50 p-6 text-center">
               <a
                 href={qualcommLaptopSpecPdf}
@@ -185,93 +176,6 @@ export default function MadDataPage() {
                   View Qualcomm Laptop Specs (PDF) <ArrowRight className="h-4 w-4" />
                 </Button>
               </a>
-              <p className="mt-3 text-sm text-gray-500">
-                If the button doesn't work, open: {qualcommLaptopSpecPdf}
-              </p>
-            </div>
-          </div>
-        </section>
-
-
-        {/* Schedule Section */}
-        <section className="mb-16 max-w-4xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              Event Schedule
-            </h2>
-          </div>
-
-          {/* Day 1 - February 21st */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="bg-gradient-to-r from-purple-600 to-blue-600 p-5">
-              <div className="flex items-center justify-center gap-3 text-white">
-                <Calendar className="h-6 w-6" />
-                <h3 className="text-2xl font-bold">Day 1 - February 21st</h3>
-              </div>
-            </div>
-            
-            <div>
-              {scheduleDay1.map((item, index) => (
-                <div
-                  key={index}
-                  className={`p-5 flex items-start gap-4 hover:bg-gray-50 transition-colors ${
-                    index !== scheduleDay1.length - 1 ? "border-b border-gray-200" : ""
-                  }`}
-                >
-                  <div className="flex-shrink-0 bg-purple-100 p-2.5 rounded-full">
-                    {item.icon}
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-                      <div>
-                        <p className="font-semibold text-gray-900">{item.title}</p>
-                        {item.location && (
-                          <p className="text-purple-600 text-sm mt-1">{item.location}</p>
-                        )}
-                      </div>
-                      <p className="text-gray-600 text-sm md:text-base whitespace-nowrap">
-                        {item.time}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Day 2 - February 22nd */}
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-5">
-              <div className="flex items-center justify-center gap-3 text-white">
-                <Calendar className="h-6 w-6" />
-                <h3 className="text-2xl font-bold">Day 2 - February 22nd</h3>
-              </div>
-            </div>
-            
-            <div>
-              {scheduleDay2.map((item, index) => (
-                <div
-                  key={index}
-                  className={`p-5 flex items-start gap-4 hover:bg-gray-50 transition-colors ${
-                    index !== scheduleDay2.length - 1 ? "border-b border-gray-200" : ""
-                  }`}
-                >
-                  <div className="flex-shrink-0 bg-blue-100 p-2.5 rounded-full">
-                    {item.icon}
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-                      <div>
-                        <p className="font-semibold text-gray-900">{item.title}</p>
-                        {item.location && (
-                          <p className="text-blue-600 text-sm mt-1">{item.location}</p>
-                        )}
-                      </div>
-                      <p className="text-gray-600 text-sm md:text-base whitespace-nowrap">
-                        {item.time}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </section>
@@ -281,7 +185,6 @@ export default function MadDataPage() {
           <h2 className="text-3xl font-bold mb-8 text-center">MadData '25 Winners</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Project Card 1 */}
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="bg-purple-100 p-3 rounded-full w-fit mb-4">
@@ -309,7 +212,6 @@ export default function MadDataPage() {
               </CardFooter>
             </Card>
 
-            {/* Project Card 2 */}
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="bg-blue-100 p-3 rounded-full w-fit mb-4">
@@ -334,7 +236,6 @@ export default function MadDataPage() {
               </CardFooter>
             </Card>
 
-            {/* Project Card 3 */}
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="bg-green-100 p-3 rounded-full w-fit mb-4">

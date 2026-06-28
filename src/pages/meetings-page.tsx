@@ -22,8 +22,7 @@ export default function MeetingsPage() {
     imageBg?: string // tailwind class for background behind contain images
   }
 
-  // Upcoming meetings (Heartland Farms stays upcoming + add attached meetings)
-  const upcomingMeetings: Meeting[] = [
+  const pastMeetings: Meeting[] = [
     {
       id: 103,
       title: "PwC",
@@ -44,7 +43,6 @@ export default function MeetingsPage() {
       location: "Morgridge Hall 2516",
       description:
         "MadData logistics + mixer. Come meet teammates if you don’t have a group yet, and we’ll review winning submissions with tips and hints.",
-      // no image (optional)
     },
     {
       id: 105,
@@ -53,15 +51,11 @@ export default function MeetingsPage() {
       time: "",
       location: "Morgridge Hall 2516",
       image: IMAGES.madData,
-      imageFit: "cover", // if this is a banner/photo, cover is best
+      imageFit: "cover",
       imageBg: "bg-gray-100",
       description:
         "The wait is over—MadData Hackathon is here! Get ready for 48 hours of intense coding, collaboration, and creativity. Be sure to bring your A-game as you work with your team to solve real-world challenges.",
     },
-  ]
-
-  // Past meetings (moved all current upcoming except Heartland Farms)
-  const pastMeetings: Meeting[] = [
     {
       id: 201,
       title: "Matthew Bruehl NVIDIA Data Analytics & Big Data Tech Lead",
@@ -194,10 +188,10 @@ export default function MeetingsPage() {
               <span className="w-2 h-6 bg-blue-500 mr-3 rounded-sm"></span>
               Upcoming Meetings
             </h2>
-            <div className="space-y-4">
-              {upcomingMeetings.map((meeting) => (
-                <MeetingCard key={meeting.id} meeting={meeting} isUpcoming={true} />
-              ))}
+            <div className="flex items-center justify-center h-40 rounded-lg border-2 border-dashed border-blue-200 bg-blue-50">
+              <p className="text-blue-500 font-medium text-center px-6">
+                Stay tuned for exciting events in Fall '26!
+              </p>
             </div>
           </div>
 

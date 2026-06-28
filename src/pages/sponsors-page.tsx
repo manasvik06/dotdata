@@ -5,6 +5,22 @@ export default function SponsorsPage() {
   // Placeholder data for sponsors/partners
   const sponsors = [
     {
+      id: 6,
+      name: "Qualcomm",
+      level: "",
+      description: "",
+      logoUrl: "/qualcomm.png",
+      logoSize: "w-32 h-16",
+    },
+    {
+      id: 7,
+      name: "American Family Insurance",
+      level: "",
+      description: "",
+      logoUrl: "/amfamlogo.png",
+      logoSize: "w-32 h-16",
+    },
+    {
       id: 1,
       name: "Epic Systems",
       level: "",
@@ -15,33 +31,30 @@ export default function SponsorsPage() {
       id: 2,
       name: "Baird",
       level: "",
-      description:
-        "",
+      description: "",
       logoUrl: "public/bairdlogo.png",
     },
     {
       id: 3,
       name: "Grafana",
       level: "",
-      description:
-        "",
+      description: "",
       logoUrl: "/grafanalogo.png",
     },
     {
       id: 4,
       name: "UW Madison Libraries",
       level: "",
-      description:
-        "",
+      description: "",
       logoUrl: "/uwmadliblogo.jpg",
     },
     {
       id: 5,
       name: "UW Madison CDIS",
       level: "",
-      description:
-        "",
+      description: "",
       logoUrl: "/cdislogo.png",
+      logoSize: "w-48 h-24",
     },
   ]
 
@@ -91,7 +104,7 @@ export default function SponsorsPage() {
               className={`border-2 ${getBorderColor(sponsor.level as PartnerLevel)} hover:shadow-md transition-shadow`}
             >
               <CardHeader className="flex flex-col items-center pt-6 pb-2">
-                <div className="w-20 h-10 mb-4">
+                <div className={`${(sponsor as any).logoSize ?? "w-20 h-10"} mb-4`}>
                   <img
                     src={sponsor.logoUrl}
                     alt={`${sponsor.name} logo`}
