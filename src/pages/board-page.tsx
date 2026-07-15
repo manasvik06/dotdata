@@ -32,10 +32,10 @@ export default function BoardPage() {
     },
     {
       id: 4,
-      name: "Carter Kurzka",
+      name: "Frank McLaughlin",
       position: "Events Head",
-      avatar: "CK",
-      email: "ckurzka@wisc.edu",
+      avatar: "FM",
+      email: "Fbmclaughlin@wisc.edu",
       linkedin: "https://www.linkedin.com/in/carter-kurzka-9056342b6/",
     },
     {
